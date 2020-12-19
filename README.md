@@ -24,7 +24,7 @@ To train a classifier we extract several features that capture different types o
   - ```length_in_words``` is the number of words in the song
   - ```string_mean_length``` is the mean line length of the song 
 2. **Syntactic information:**
-  - ```mean_depth``` is mean syntactic tree depth, annotated based on the [UD](https://universaldependencies.org) framework, using [Udapi](https://udapi.github.io) parser
+  - ```mean_depth``` is mean syntactic tree depth, annotated based on the [UD](https://universaldependencies.org) framework using [Udapi](https://udapi.github.io) parser
 3. **Semantic information:**
   - ```swear_words``` is a binary feature, indicating the presence of swear words in the lyrics
   - ```slang```  is ...
