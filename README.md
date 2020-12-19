@@ -7,7 +7,7 @@ Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
 - Country
 - Folk      
 - Blues
-
+---
 Use the following code to download the data:
 
 <code> wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O FILENAME</code>
