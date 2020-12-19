@@ -42,4 +42,4 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
   2.  <a name="2"></a>```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. [spaCy: Industrial-strength Natural Language Processing in Python](https://spacy.io). Zenodo.
   3.  <a name="3"></a>```Martin Popel, Zdeneˇk Žabokrtský, Martin Vojtek (2017)```. [Udapi: Universal API for Universal Dependencies](http://universaldependencies.org/udw17/pdf/UDW12.pdf). Proceedings of the NoDaLiDa 2017 Workshop on Universal Dependencies (UDW 2017). 
-  4.  <a name="4"></a>```Edward Loper, Steven Bird (2002)```. [NLTK: the Natural Language Toolkit](https://www.aclweb.org/anthology/W02-0109.pdf). CoRR. 
+  4.  <a name="4"></a>```Edward Loper, Steven Bird (2002)```. [NLTK: the Natural Language Toolkit](https://www.aclweb.org/anthology/W02-0109.pdf). Association for Computational Linguistics. 
