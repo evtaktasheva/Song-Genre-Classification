@@ -1,6 +1,6 @@
 # Song-Genre-Classification
 
-Following [(Fell, Sporleder 2014)](#Fell, Sporleder 2014) we classify song lyrics into 6 genres:
+Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
 - Pop
 - Rock
 - Rap
@@ -39,7 +39,7 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   
   
   ### Bibliography
-  1. <a name="Fell, Sporleder 2014"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
+  1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
   2. ```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. *spaCy: Industrial-strength Natural Language Processing in Python*. Zenodo.
   3. ```Martin Popel, Zdeneˇk Žabokrtský, Martin Vojtek (2017)```. *Udapi: Universal API for Universal Dependencies*. Proceedings of the NoDaLiDa 2017 Workshop on Universal Dependencies (UDW 2017). 
   4. ```Steven Bird, Edward Loper and Ewan Klein (2009)```. *Natural Language Processing with Python*. O'Reilly Media Inc.
