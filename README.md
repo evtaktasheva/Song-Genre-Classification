@@ -1,12 +1,14 @@
 # Song-Genre-Classification
 
-Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
-- Pop
+This work is based on the [(Fell, Sporleder 2014)](#1) and explores lyrics' genre classification. Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
+- Pop 
 - Rock
 - Rap
 - Country
 - Folk      
 - Blues
+
+Note, that in the original paper the Rock and Pop genre were considered one class but in our work we try to distinguish between them.
 ---
 Use the following code to download the data:
 
