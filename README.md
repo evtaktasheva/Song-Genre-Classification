@@ -13,7 +13,7 @@ Following [[Fell, Sporleder 2014]](https://www.aclweb.org/anthology/C14-1059/) w
 
 ### 1_data_collection.ipynb
 We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and FOLK and BLUES lyrics from https://www.musixmatch.com.
-As the data only contains the artist, song name and lyrics, we extraxt additional imformation on the song genre using [Musixmatch API](https://developer.musixmatch.com) 
+As the data only contains the artist, song name and lyrics, we extraxt additional information on the song genre using [Musixmatch API](https://developer.musixmatch.com) 
 
 Data is tokenized, filtered with simple euristics and split into train and test with no artist overlap between splits to avoid overfittig.
 
