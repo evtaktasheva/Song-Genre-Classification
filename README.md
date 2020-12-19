@@ -39,8 +39,8 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   
   
   ### Bibliography
-  1. Michael Fell, Caroline Sporleder (2014). Lyrics-based Analysis and Classification of Music. Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
-  2. Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020). spaCy: Industrial-strength Natural Language Processing in Python. Zenodo.
-  3. Martin Popel, Zdeneˇk Žabokrtský, Martin Vojtek (2017). Udapi: Universal API for Universal Dependencies. Proceedings of the NoDaLiDa 2017 Workshop on Universal Dependencies (UDW 2017). 
-  4. Steven Bird, Edward Loper and Ewan Klein (2009). Natural Language Processing with Python. O'Reilly Media Inc.
+  1. ```Michael Fell, Caroline Sporleder (2014)```. *Lyrics-based Analysis and Classification of Music*. Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
+  2. ```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. *spaCy: Industrial-strength Natural Language Processing in Python*. Zenodo.
+  3. ```Martin Popel, Zdeneˇk Žabokrtský, Martin Vojtek (2017)```. *Udapi: Universal API for Universal Dependencies*. Proceedings of the NoDaLiDa 2017 Workshop on Universal Dependencies (UDW 2017). 
+  4. ```Steven Bird, Edward Loper and Ewan Klein (2009)```. *Natural Language Processing with Python*. O'Reilly Media Inc.
   
