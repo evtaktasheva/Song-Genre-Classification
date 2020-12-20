@@ -13,7 +13,7 @@ Note, that in the original paper the Rock and Pop genre were considered one clas
 ---
 Use the following code to download the data:
 
-<code> wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O FILENAME</code>
+<code> wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VzsqUodB0yp5kb2zi-jYA7VMgcjJj7tI' -O data.csv</code>
 
 ### 1_data_collection.ipynb
 We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and FOLK and BLUES lyrics from https://www.musixmatch.com.
