@@ -36,8 +36,8 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```ne_ratio``` captures the emount of named entities (including names, places, etc.) extracted by SpaCy NER Tagger
   - ```type_token``` is ...
   - ```ngram_ratio``` is .... where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
-  - ```pronouns_first_to_second``` is ...
-  - ```pronouns_self_to_nonself``` is ...
+  - ```pronouns_first_to_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
+  - ```pronouns_self_to_nonself``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
   
   
