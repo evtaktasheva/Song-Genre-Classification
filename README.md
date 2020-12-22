@@ -62,12 +62,12 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 
 
 ### Results
-|Model|val|test|Average|
-|-----|---|----|-------|
-|*topK*|75.0|76.9|75.95|
-|*extended*||||
-|*RandomForest*||||
-|*XGBoost*||||
+|Model|val|test|
+|-----|---|----|
+|*topK*|75.0|76.9|
+|*extended*|||
+|*RandomForest*|||
+|*XGBoost*|||
 
 
 ### Bibliography
