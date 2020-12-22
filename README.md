@@ -47,7 +47,9 @@ The data is then split into train, test and validation subsets.
 |%|75|12.5|12.5|
 |Num. sentences| 15,438 | 2,573 | 2,572 |
 
-```math F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}```
+```math
+F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}
+```
 ### Metrics
 Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/gif.latex?F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
