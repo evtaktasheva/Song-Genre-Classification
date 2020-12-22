@@ -51,7 +51,7 @@ The data is then split into train, test and validation subsets.
 
 
 ### Metrics
-Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;\small&space;F1_i=\frac{2\cdot&space;precision&space;\cdot&space;recall}{precision&space;&plus;&space;recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\small&space;F1&space;=&space;\sum_{i=1}^{n}&space;W_iF1_i">.
+Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1_i=\frac{2\cdot&space;precision&space;\cdot&space;recall}{precision&space;&plus;&space;recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1&space;=&space;\sum_{i=1}^{n}&space;W_iF1_i">.
 
 
 ### Model selection
