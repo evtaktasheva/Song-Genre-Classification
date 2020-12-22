@@ -42,11 +42,7 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
 
 
 ### Metrics
-Since our classes are not particularily balanced we use a weighted f1-score as our metric for the evaluation of models' performance.
-
-<img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}">
-
-<img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} F1_i">
+Since our classes are not particularily balanced we use a weighted f1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting f1-score is calculated as follows: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">
 
   ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
