@@ -61,6 +61,14 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 |*XGBoost*| optimized gradient boosting on full set of features|
 
 
+### Results
+|Model|val|test|Average|
+|-----|---|----|-------|
+|*topK*||||
+|*extended*||||
+|*RandomForest*||||
+|*XGBoost*||||
+
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
   2.  <a name="2"></a>```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. [spaCy: Industrial-strength Natural Language Processing in Python](https://spacy.io). Zenodo.
