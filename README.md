@@ -40,11 +40,24 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```pronouns_self_to_nonself``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
 
+The data is then split into train, test and validation subsets.
 
+| |train|test|val|
+|_|_____|____|___|
+|Num. semtences| 15,438 | 2,573 | 2,572 |
+|_|_|_|_|
+|%|75|12.5|12.5|
+|_|_|_|_|
 ### Metrics
-Since our classes are not particularily balanced we use a weighted f1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting f1-score is calculated as follows: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">
+Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
-  ### Bibliography
+
+### Models
+Following [(Fell, Sporleder 2014)](#1) we implement a simple TF-IDF n-gram model as our baseline (<img src="https://render.githubusercontent.com/render/math?math=n \leq 3">). 
+
+
+
+### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
   2.  <a name="2"></a>```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. [spaCy: Industrial-strength Natural Language Processing in Python](https://spacy.io). Zenodo.
   3.  <a name="3"></a>```Martin Popel, Zdeneˇk Žabokrtský, Martin Vojtek (2017)```. [Udapi: Universal API for Universal Dependencies](http://universaldependencies.org/udw17/pdf/UDW12.pdf). Proceedings of the NoDaLiDa 2017 Workshop on Universal Dependencies (UDW 2017). 
