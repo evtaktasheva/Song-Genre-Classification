@@ -49,7 +49,7 @@ The data is then split into train, test and validation subsets.
 
 
 ### Metrics
-Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision \+ recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
+Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision $+ recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
 
 ### Model selection
