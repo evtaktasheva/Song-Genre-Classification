@@ -46,7 +46,7 @@ Since our classes are not particularily balanced we use a weighted f1-score as o
 
 <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdor recall}{precision + recall}">
 
-<img src="https://render.githubusercontent.com/render/math?math=F1 = \summ_{i=1}^{n} F1_i">
+<img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} F1_i">
 
   ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
