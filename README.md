@@ -13,7 +13,9 @@ Note, that in the original paper the Rock and Pop genre were considered one clas
 ---
 Use the following code to download the data:
 
-<code> wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VzsqUodB0yp5kb2zi-jYA7VMgcjJj7tI' -O data.csv</code>
+``` 
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VzsqUodB0yp5kb2zi-jYA7VMgcjJj7tI' -O data.csv
+```
 
 ### 1_data_collection.ipynb
 We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and FOLK and BLUES lyrics from https://www.musixmatch.com.
@@ -47,11 +49,9 @@ The data is then split into train, test and validation subsets.
 |%|75|12.5|12.5|
 |Num. sentences| 15,438 | 2,573 | 2,572 |
 
-```math
-F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}
-```
+
 ### Metrics
-Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/gif.latex?F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
+Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
 
 ### Model selection
