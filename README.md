@@ -49,7 +49,7 @@ The data is then split into train, test and validation subsets.
 
 
 ### Metrics
-Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision \text{+} recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
+Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision \+ recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
 
 ### Model selection
@@ -64,10 +64,11 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 ### Results
 |Model|val|test|Average|
 |-----|---|----|-------|
-|*topK*||||
+|*topK*|75.0|76.9|75.95|
 |*extended*||||
 |*RandomForest*||||
 |*XGBoost*||||
+
 
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
