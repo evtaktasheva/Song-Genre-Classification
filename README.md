@@ -27,8 +27,8 @@ Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered wit
 ### 2_features.ipynb
 To train a classifier we extract several features that capture different types of information from the text:
 1. **Surface information:**
-  - ```length_in_words``` is the number of words in the song
-  - ```string_mean_length``` is the mean line length of the song 
+  - ```words_length``` is the number of words in the song
+  - ```line_lenth``` is the mean line length of the song 
 2. **Syntactic information:**
   - ```mean_depth``` is mean syntactic tree depth, annotated based on the [UD](https://universaldependencies.org) framework using UDapi parser [(Popel et al. 2017)](#3).
 3. **Semantic information:**
@@ -38,8 +38,8 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```ne_ratio``` captures the emount of named entities (including names, places, etc.) extracted by SpaCy NER Tagger
   - ```type_token``` reflects the diversity of lexicon of the lyrics. It is calculated as <img src="https://render.githubusercontent.com/render/math?math=\frac{T_{unique}}{T_{all}}">, where <img src="https://render.githubusercontent.com/render/math?math=T"> is the number of tokens.
   - ```ngram_ratio``` is the same as the ```type_token``` feature calculated not over single tokens but n-grams, where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
-  - ```pronouns_first_to_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
-  - ```pronouns_self_to_nonself``` is the ratio of first person singular pronouns to second person
+  - ```pron_first_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
+  - ```pron_self``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
 
 The data is then split into train, test and validation subsets.
