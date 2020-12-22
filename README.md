@@ -39,8 +39,15 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```pronouns_first_to_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
   - ```pronouns_self_to_nonself``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
-  
-  
+
+
+### Metrics
+Since our classes are not particularily balanced we use a weighted f1-score as our metric for the evaluation of models' performance.
+
+<img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdor recall}{precision + recall}">
+
+<img src="https://render.githubusercontent.com/render/math?math=F1 = \summ_{i=1}^{n} F1_i">
+
   ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
   2.  <a name="2"></a>```Matthew Honnibal, Ines Montani, Sofie Van Landeghem and Adriane Boyd (2020)```. [spaCy: Industrial-strength Natural Language Processing in Python](https://spacy.io). Zenodo.
