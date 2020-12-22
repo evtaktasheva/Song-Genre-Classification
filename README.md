@@ -43,6 +43,7 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
 The data is then split into train, test and validation subsets.
 
 | |train|test|val|
+|-|-----|----|---|
 |%|75|12.5|12.5|
 |Num. semtences| 15,438 | 2,573 | 2,572 |
 
