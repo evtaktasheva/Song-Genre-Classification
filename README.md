@@ -34,8 +34,8 @@ To train a classifier we extract several features that capture different types o
   - ```slang```  is a percentage of the non-literary words in the lyrics. The non-slang words are detected using NLTK library [(Loper, Bird. 2002)](#4).
 Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```ne_ratio``` captures the emount of named entities (including names, places, etc.) extracted by SpaCy NER Tagger
-  - ```type_token``` is ...
-  - ```ngram_ratio``` is .... where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
+  - ```type_token``` reflects the diversity of lexicon of the lyrics. It is calculated as <img src="https://render.githubusercontent.com/render/math?math=\frac{T_{unique}}{T_{all}}">, where <img src="https://render.githubusercontent.com/render/math?math=T"> is the number of tokens.
+  - ```ngram_ratio``` is the same as the ```type_token``` feature calculated not over single tokens but n-grams, where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
   - ```pronouns_first_to_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
   - ```pronouns_self_to_nonself``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
@@ -48,14 +48,17 @@ The data is then split into train, test and validation subsets.
 |Num. semtences| 15,438 | 2,573 | 2,572 |
 
 
-
 ### Metrics
 Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} W_iF1_i">.
 
 
-### Models
-Following [(Fell, Sporleder 2014)](#1) we implement a simple TF-IDF n-gram model as our baseline (<img src="https://render.githubusercontent.com/render/math?math=n \leq 3">). 
-
+### Model selection
+|Model|Description|
+|-----|-----------|
+|*topK*|tf-idf n-gram model, <img src="https://render.githubusercontent.com/render/math?math=n \leq 3"> (logit over tf-idf features)|
+|*extended*|logistic regression over full set of features|
+|*RandomForest*||
+|*XGBoost*||
 
 
 ### Bibliography
