@@ -44,7 +44,7 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
 ### Metrics
 Since our classes are not particularily balanced we use a weighted f1-score as our metric for the evaluation of models' performance.
 
-<img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdor recall}{precision + recall}">
+<img src="https://render.githubusercontent.com/render/math?math=F1_i = \frac{2 \cdot precision \cdot recall}{precision + recall}">
 
 <img src="https://render.githubusercontent.com/render/math?math=F1 = \sum_{i=1}^{n} F1_i">
 
