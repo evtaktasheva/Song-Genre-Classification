@@ -68,7 +68,7 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 |-----|---|----|
 |*topK*|75.0|76.9|
 |*extended*|53.6|50.7|
-|*RandomForest*|||
+|*RandomForest*|68.8|67.8|
 |*XGBoost*|||
 
 
