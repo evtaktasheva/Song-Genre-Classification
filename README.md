@@ -55,10 +55,10 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 ### Model selection
 |Model|Description|
 |-----|-----------|
-|*topK*|tf-idf n-gram model, <img src="https://render.githubusercontent.com/render/math?math=n \leq 3"> (logit over tf-idf features)|
-|*extended*|logistic regression over full set of features|
-|*RandomForest*||
-|*XGBoost*||
+|*topK*|tf-idf n-gram model, <img src="https://render.githubusercontent.com/render/math?math=n \leq 3"> (logistic regression on tf-idf features)|
+|*extended*|logistic regression on full set of features|
+|*RandomForest*|ensemble of decision tree classifiers on full set of features|
+|*XGBoost*| optimized gradient boosting on full set of features|
 
 
 ### Bibliography
