@@ -79,12 +79,15 @@ To compare model performance we introduce a *human baseline*.
 #### Feature Importance
 
 ```Logistiic Reggression```
+
 ![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png)
 
 ```Random Forest```
+
 ![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png)
 
 ```XGBoost```
+
 ![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png)
 
 
