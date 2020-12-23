@@ -1,5 +1,13 @@
 # Song-Genre-Classification
 
+#### Participants
+- Anna Aksenova
+- Polina Kudryavtseva
+- Katya Taktasheva
+- Sasha Trepalenko
+- Katya Voloshina
+
+
 This work is based on the [(Fell, Sporleder 2014)](#1) and explores lyrics' genre classification. Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
 - Blues
 - Country
@@ -70,7 +78,7 @@ To compare model performance we introduce a *human baseline*.
 ```3_experiments.ipynb```
 |F1-score|Blues|Country|Folk|Pop|Rap|Rock|Average|
 |------------|-----|-------|----|---|---|----|-------|
-|*topK*|**0.37|0.78|0.94|0.45|0.97|0.57|0.77|**
+|*topK*|**0.37**|**0.78**|**0.94**|**0.45**|**0.97**|**0.57**|**0.77**|
 |*extended*|0.08|0.47|0.75|0.38|0.75|0.14|0.51|
 |*RandomForest*|0.0|0.68|0.88|0.37|0.93|0.43|0.68|
 |*XGBoost*|0.0|0.66|0.89|0.34|0.93|0.42|0.67|
@@ -78,17 +86,10 @@ To compare model performance we introduce a *human baseline*.
 
 #### Feature Importance
 
-```Logistiic Reggression```
+|```Logistiic Reggression```|```Random Forest```|```XGBoost```|
+|---------------------------|-------------------|-------------|
+|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
 
-![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png)
-
-```Random Forest```
-
-![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png)
-
-```XGBoost```
-
-![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png)
 
 
 ### Bibliography
