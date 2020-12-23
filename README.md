@@ -58,7 +58,7 @@ The data is then split into train, test and validation subsets.
 | |train|test|val|
 |-|-----|----|---|
 |%|75|12.5|12.5|
-|Num. sentences| 15,438 | 2,573 | 2,572 |
+|Num. songs| 15,438 | 2,573 | 2,572 |
 
 
 ### Metrics
