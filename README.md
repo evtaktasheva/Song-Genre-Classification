@@ -76,6 +76,17 @@ To compare model performance we introduce a *human baseline*.
 |*XGBoost*|0.0|0.66|0.89|0.34|0.93|0.42|0.67|
 |*human baseline*|||||||||
 
+#### Feature Importance
+
+```Logistiic Reggression```
+![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png)
+
+```Random Forest```
+![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png)
+
+```XGBoost```
+![](https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png)
+
 
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
