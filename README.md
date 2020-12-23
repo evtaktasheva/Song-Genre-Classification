@@ -87,32 +87,37 @@ To compare model performance we introduce a *human baseline*.
 |*XGBoost*|0.0|0.66|*0.89*|0.34|*0.93*|0.42|0.67|
 |*human baseline*|0.12||||||||
 
+- The baseline model *topK* shows best performance on the dataset, which somewhat correlates with the results in the original paper, where *topK* model performed better than the *extended* model.
+- Out of the three "feature-based" models, *RandomForest* has the highest F-scores (average and for Country, Rap and Rock).
+- *XGBoost* performs similarily to *RandomForest* but has slightly lower scores on some tasks (except Folk classification) and the same on classifying Rap.
+- *extended* model is inferior to all others by a margin.
+
+- The esiest genre to identify by text is Rap, as it is in the original paper.
+- The biggest problem for models was Blues, but this can be due to data imbalance as it was the genre with the lowest number of songs in the dataset.
+- Pop and Rock have quite low scores as well. This is probably due to the fact that they are, indeed, too similar to be distinguished just by lyrics.
+- All the models show are surprisingly good at classifying Folk songs (F-score 0.75-0.94), which was the genre with the lowest scores in the original paper (F-score 0.245-0.296).
+
+
 #### Feature Importance
+
+|Index|Feature|Index|Feature|Index|Feature|
+|-----|-------|-----|-------|-----|-------|
+|0|tree_depth|5|pron_self|10|VERB|
+|1|ne_ratio|6|pron_first_second|11|ADJ|
+|2|type_token|7|words_length|12|PRON|
+|3|ngram_ratio|8|lines_length|13|swear_words|
+|4|slang|9|NOUN|
+
+
 |```extended```|```Random Forest```|```XGBoost```|
-|---------------------------|-------------------|-------------|
+|--------------|-------------------|-------------|
 |<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
-
-
-|Index|Feature|
-|-----|-------|
-|0|tree_depth|
-|1|ne_ratio|
-|2|type_token|
-|3|ngram_ratio|
-|4|slang|
-|5|pron_self|
-|6|pron_first_second|
-|7|words_length|
-|8|lines_length|
-|9|NOUN|
-|10|VERB|
-|11|ADJ|
-|12|PRON|
-|13|swear_words|
 
 - The most prominent features for *extended* model are `slang` and `swear_words`, while others do not play such a big role in the decision making. 
 - *RandomForest* has a much different distribution, making use of almost all features to the same extent, although `slang`, `words_length` and `lines_length` are quite helpful in analysing song lyrics.
-- *XGBoost* has similar distribution to the *extended* model as it assigns more value to `slang` and `swear_words` features and  
+- *XGBoost* has similar distribution to the *extended* model as it assigns more value to `slang` and `swear_words` features and 
+
+
 
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
