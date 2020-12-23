@@ -17,14 +17,16 @@ Use the following code to download the data:
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VzsqUodB0yp5kb2zi-jYA7VMgcjJj7tI' -O data.csv
 ```
 
-### 1_data_collection.ipynb
+### Data Collection
+```1_data_collection.ipynb```
 We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and FOLK and BLUES lyrics from https://www.musixmatch.com.
 As the data only contains the artist, song name and lyrics, we extraxt additional information on the song genre using [Musixmatch API](https://developer.musixmatch.com) 
 
 Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered with simple euristics (e.g. length of the text) and split into train and test with no artist overlap between splits to avoid overfittig.
 
 
-### 2_features.ipynb
+### Features
+```2_features.ipynb```
 To train a classifier we extract several features that capture different types of information from the text:
 1. **Surface information:**
   - ```words_length``` is the number of words in the song
@@ -62,14 +64,18 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 |*RandomForest*|ensemble of decision tree classifiers over full set of features|
 |*XGBoost*| optimized gradient boosting over full set of features|
 
+To compare model performance we introduce a *human baseline*.
 
 ### Results
-|Model|val|test|
-|-----|---|----|
-|*topK*|75.0|76.9|
-|*extended*|53.6|50.7|
-|*RandomForest*|68.8|67.8|
-|*XGBoost*|||
+```3_experiments.ipynb```
+|F1-score|Blues|Country|Folk|Pop|Rap|Rock|Average|
+|------------|-----|-------|----|---|---|----|-------|
+|*topK*|0.37|0.78|0.94|0.45|0.97|0.57|0.77|
+|*extended*|0.08|0.47|0.75|0.38|0.75|0.14|0.51|
+|*RandomForest*|0.0|0.68|0.88|0.37|0.93|0.43|0.68|
+|*XGBoost*|0.0|0.66|0.89|0.34|0.93|0.42|0.67|
+|------------|-----|-------|----|---|---|----|-------|
+|*human baseline*|||||||||
 
 
 ### Bibliography
