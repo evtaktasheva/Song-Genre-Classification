@@ -1,7 +1,7 @@
 # Song-Genre-Classification
 
 #### Participants
-- Anna Aksenova
+- Anya Aksenova
 - Polina Kudryavtseva
 - Katya Taktasheva
 - Sasha Trepalenko
@@ -27,20 +27,22 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Vzsq
 
 ### Data Collection
 ```1_data_collection.ipynb```
+
 We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and Folk and Blues lyrics from https://www.musixmatch.com.
 As the data only contains the artist, song name and lyrics, we extraxt additional information on the song genre using [Musixmatch API](https://developer.musixmatch.com) 
 
 Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered with simple euristics (e.g. length of the text) and split into train and test with no artist overlap between splits to avoid overfittig.
 
 
-| |train|test|val|
-|-|-----|----|---|
-|%|75|12.5|12.5|
-|Num. songs| 15,438 | 2,573 | 2,572 |
+| |train|test|val|Total|
+|-|-----|----|---|-|
+|%|75|12.5|12.5|100|
+|Num. songs|15,438|2,573|2,572|20,583|
 
 
 ### Features
 ```2_features.ipynb```
+
 To train a classifier we extract several features that capture different types of information from the text:
 1. **Surface information:**
   - ```words_length``` is the number of words in the song
@@ -60,10 +62,13 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
 
 
 ### Metrics
-Since our classes are not particularily balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1_i=\frac{2\cdot&space;precision&space;\cdot&space;recall}{precision&space;&plus;&space;recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1&space;=&space;\sum_{i=1}^{n}&space;W_iF1_i">.
+```3_experiments.ipynb```
+
+Since our classes are not balanced we use a weighted F1-score as our metric for the evaluation of models' performance, where <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1_i=\frac{2\cdot&space;precision&space;\cdot&space;recall}{precision&space;&plus;&space;recall}"> and the resulting F1-score is calculated as a weighted sum: <img src="https://latex.codecogs.com/svg.latex?\inline&space;F1&space;=&space;\sum_{i=1}^{n}&space;W_iF1_i">.
 
 
 ### Model selection
+
 |Model|Description|
 |-----|-----------|
 |*topK*|tf-idf n-gram model, <img src="https://render.githubusercontent.com/render/math?math=n \leq 3"> (logistic regression over tf-idf features)|
@@ -74,7 +79,6 @@ Since our classes are not particularily balanced we use a weighted F1-score as o
 To compare model performance we introduce a *human baseline*.
 
 ### Results
-```3_experiments.ipynb```
 |F1-score|Blues|Country|Folk|Pop|Rap|Rock|Average|
 |------------|-----|-------|----|---|---|----|-------|
 |*topK*|**0.37**|**0.78**|**0.94**|**0.45**|**0.97**|**0.57**|**0.77**|
@@ -87,7 +91,6 @@ To compare model performance we introduce a *human baseline*.
 |```extended```|```Random Forest```|```XGBoost```|
 |---------------------------|-------------------|-------------|
 |<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
-
 
 
 |Index|Feature|
@@ -107,6 +110,9 @@ To compare model performance we introduce a *human baseline*.
 |12|PRON|
 |13|swear_words|
 
+- The most prominent features for *extended* model are `slang` and `swear_words`, while others do not play such a big role in the decision making. 
+- *RandomForest* has a much different distribution, making use of almost all features to the same extent, although `slang`, `words_length` and `lines_length` are quite helpful in analysing song lyrics.
+- *XGBoost* has similar distribution to the *extended* model as it assigns more value to `slang` and `swear_words` features and  
 
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
