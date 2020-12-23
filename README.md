@@ -16,7 +16,7 @@ This work is based on the [(Fell, Sporleder 2014)](#1) and explores lyrics' genr
 - Rap 
 - Rock
 
-Note, that in the original paper the Rock and Pop genre were considered one class but in our work we try to distinguish between them.
+Note, that in the original paper the Rock and Pop genre were considered one class but in our work we try to distinguish them.
 
 ---
 Use the following code to download the data:
