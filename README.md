@@ -81,7 +81,7 @@ To compare model performance we introduce a *human baseline*.
 |*extended*|*0.08*|0.47|0.75|*0.38*|0.75|0.14|0.51|
 |*RandomForest*|0.0|*0.68*|0.88|0.37|*0.93*|*0.43*|*0.68*|
 |*XGBoost*|0.0|0.66|*0.89*|0.34|*0.93*|0.42|0.67|
-|*human baseline*|||||||||
+|*human baseline*|0.12||||||||
 
 #### Feature Importance
 |```extended```|```Random Forest```|```XGBoost```|
