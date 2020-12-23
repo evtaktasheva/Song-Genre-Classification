@@ -34,6 +34,12 @@ As the data only contains the artist, song name and lyrics, we extraxt additiona
 Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered with simple euristics (e.g. length of the text) and split into train and test with no artist overlap between splits to avoid overfittig.
 
 
+| |train|test|val|
+|-|-----|----|---|
+|%|75|12.5|12.5|
+|Num. songs| 15,438 | 2,573 | 2,572 |
+
+
 ### Features
 ```2_features.ipynb```
 To train a classifier we extract several features that capture different types of information from the text:
@@ -52,13 +58,6 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```pron_first_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
   - ```pron_self``` is the ratio of first person singular pronouns to second person
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
-
-The data is then split into train, test and validation subsets.
-
-| |train|test|val|
-|-|-----|----|---|
-|%|75|12.5|12.5|
-|Num. songs| 15,438 | 2,573 | 2,572 |
 
 
 ### Metrics
