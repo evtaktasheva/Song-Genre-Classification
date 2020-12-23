@@ -1,12 +1,12 @@
 # Song-Genre-Classification
 
 This work is based on the [(Fell, Sporleder 2014)](#1) and explores lyrics' genre classification. Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
-- Pop 
-- Rock
-- Rap
-- Country
-- Folk      
 - Blues
+- Country
+- Folk
+- Pop
+- Rap 
+- Rock
 
 Note, that in the original paper the Rock and Pop genre were considered one class but in our work we try to distinguish between them.
 
@@ -19,7 +19,7 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Vzsq
 
 ### Data Collection
 ```1_data_collection.ipynb```
-We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and FOLK and BLUES lyrics from https://www.musixmatch.com.
+We extract data mostly from [AZLyrics Song Lyrics Dataset](https://www.kaggle.com/albertsuarez/azlyrics) with addition of RAP lyrics from [Hip-Hop Encounters Data Science Dataset](https://www.kaggle.com/rikdifos/rap-lyrics) and Folk and Blues lyrics from https://www.musixmatch.com.
 As the data only contains the artist, song name and lyrics, we extraxt additional information on the song genre using [Musixmatch API](https://developer.musixmatch.com) 
 
 Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered with simple euristics (e.g. length of the text) and split into train and test with no artist overlap between splits to avoid overfittig.
@@ -75,7 +75,6 @@ To compare model performance we introduce a *human baseline*.
 |*RandomForest*|0.0|0.68|0.88|0.37|0.93|0.43|0.68|
 |*XGBoost*|0.0|0.66|0.89|0.34|0.93|0.42|0.67|
 |*human baseline*|||||||||
-
 
 
 ### Bibliography
