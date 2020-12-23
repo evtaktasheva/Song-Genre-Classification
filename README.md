@@ -8,6 +8,7 @@
 - Katya Voloshina
 
 
+
 This work is based on the [(Fell, Sporleder 2014)](#1) and explores lyrics' genre classification. Following [(Fell, Sporleder 2014)](#1) we classify song lyrics into 6 genres:
 - Blues
 - Country
