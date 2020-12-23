@@ -86,6 +86,7 @@ To compare model performance we introduce a *human baseline*.
 
 #### Feature Importance
 |Index|Feature|
+|-----|-------|
 |0|tree_depth|
 |1|ne_ratio|
 |2|type_token|
