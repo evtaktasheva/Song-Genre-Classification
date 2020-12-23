@@ -34,10 +34,10 @@ As the data only contains the artist, song name and lyrics, we extraxt additiona
 Data is tokenized using SpaCy library [(Honnibal et al. 2020)](#2), filtered with simple euristics (e.g. length of the text) and split into train and test with no artist overlap between splits to avoid overfittig.
 
 
-| |train|test|val|Total|
+| |train|test|val|**Total**|
 |-|-----|----|---|-|
-|%|75|12.5|12.5|100|
-|Num. songs|15,438|2,573|2,572|20,583|
+|%|75|12.5|12.5|**100**|
+|Num. songs|15,438|2,573|2,572|**20,583**|
 
 
 ### Features
