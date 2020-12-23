@@ -86,6 +86,12 @@ To compare model performance we introduce a *human baseline*.
 |*human baseline*|||||||||
 
 #### Feature Importance
+|```Logistiic Reggression```|```Random Forest```|```XGBoost```|
+|---------------------------|-------------------|-------------|
+|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
+
+
+
 |Index|Feature|
 |-----|-------|
 |0|tree_depth|
@@ -102,12 +108,6 @@ To compare model performance we introduce a *human baseline*.
 |11|ADJ|
 |12|PRON|
 |13|swear_words|
-
-
-|```Logistiic Reggression```|```Random Forest```|```XGBoost```|
-|---------------------------|-------------------|-------------|
-|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
-
 
 
 ### Bibliography
