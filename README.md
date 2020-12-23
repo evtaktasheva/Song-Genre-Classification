@@ -85,6 +85,22 @@ To compare model performance we introduce a *human baseline*.
 |*human baseline*|||||||||
 
 #### Feature Importance
+|Index|Feature|
+|0|tree_depth|
+|1|ne_ratio|
+|2|type_token|
+|3|ngram_ratio|
+|4|slang|
+|5|pron_self|
+|6|pron_first_second|
+|7|words_length|
+|8|lines_length|
+|9|NOUN|
+|10|VERB|
+|11|ADJ|
+|12|PRON|
+|13|swear_words|
+
 
 |```Logistiic Reggression```|```Random Forest```|```XGBoost```|
 |---------------------------|-------------------|-------------|
