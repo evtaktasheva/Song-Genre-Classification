@@ -49,7 +49,7 @@ To train a classifier we extract several features that capture different types o
   - ```line_lenth``` is the mean line length of the song 
 2. **Syntactic information:**
   - ```mean_depth``` is mean syntactic tree depth, annotated based on the [UD](https://universaldependencies.org) framework using UDapi parser [(Popel et al. 2017)](#3).
-3. **Semantic information:**
+3. **Lexical information:**
   - ```swear_words``` is a binary feature, indicating the presence of swear words in the lyrics
   - ```slang```  is a percentage of the non-literary words in the lyrics. The non-slang words are detected using NLTK library [(Loper, Bird. 2002)](#4).
 Natural Language Processing with Python.  O'Reilly Media Inc.]
@@ -58,6 +58,7 @@ Natural Language Processing with Python.  O'Reilly Media Inc.]
   - ```ngram_ratio``` is the same as the ```type_token``` feature calculated not over single tokens but n-grams, where <img src="https://render.githubusercontent.com/render/math?math=n \leq 3">
   - ```pron_first_second``` is the proportion of self-referencing pronouns (first person singular/plural) to non-self-referencing ones
   - ```pron_self``` is the ratio of first person singular pronouns to second person
+4. **Morphological information**  
   - ```NOUN```, ```VERB```, ```ADJ```, ```PRON``` show the percentage of nouns, verbs, adjectives and pronouns present
 
 
