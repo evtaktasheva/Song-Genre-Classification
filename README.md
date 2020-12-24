@@ -121,6 +121,9 @@ To compare model performance we introduce a *human baseline*.
 #### Confusion matrix
 
 
+|```topK```|```Random Forest```|
+|--------------|-------------------|
+|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/tfidf.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest.png" alt="drawing" width="600"/>|
 
 ### Bibliography
   1. <a name="1"></a>```Michael Fell, Caroline Sporleder (2014)```. [Lyrics-based Analysis and Classification of Music](https://www.aclweb.org/anthology/C14-1059/). Proceedings of {COLING} 2014, the 25th International Conference on Computational Linguistics: Technical Papers.
