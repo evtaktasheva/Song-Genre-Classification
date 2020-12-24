@@ -120,6 +120,7 @@ To compare model performance we introduce a *human baseline*.
 
 #### Confusion matrix
 
+Models classify better such genres as `Rap` and `Folk` as can be seen from the confusion matrices below. The most difficult genre to classify is `Blues` and `Pop`. `Pop` and `Rock` are often confused with `Country`. 
 
 |```topK```|```Random Forest```|
 |--------------|-------------------|
