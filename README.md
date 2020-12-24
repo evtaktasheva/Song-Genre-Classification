@@ -96,6 +96,7 @@ To compare model performance we introduce a *human baseline*.
 - The biggest problem for models was Blues, but this can be due to data imbalance as it was the genre with the lowest number of songs in the dataset.
 - Pop and Rock have quite low scores as well. This is probably due to the fact that they are, indeed, too similar to be distinguished just by lyrics.
 - All the models show are surprisingly good at classifying Folk songs (F-score 0.75-0.94), which was the genre with the lowest scores in the original paper (F-score 0.245-0.296).
+- The human performance is actually worse than the automatic classiﬁcation, which is consistent with the results of the original paper. As it is for the models, the easiest genre to identify by humans is Rap.
 
 
 #### Feature Importance
