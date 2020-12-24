@@ -93,7 +93,7 @@ To compare model performance we introduce a *human baseline*.
 - *XGBoost* performs similarily to *RandomForest* but has slightly lower scores on some tasks (except Folk classification) and the same on classifying Rap.
 - *extended* model is inferior to all others by a margin.
 
-- The esiest genre to identify by text is Rap, as it is in the original paper.
+- The easiest genre to identify by text is Rap, as it is in the original paper.
 - The biggest problem for models was Blues, but this can be due to data imbalance as it was the genre with the lowest number of songs in the dataset.
 - Pop and Rock have quite low scores as well. This is probably due to the fact that they are, indeed, too similar to be distinguished just by lyrics.
 - All the models show are surprisingly good at classifying Folk songs (F-score 0.75-0.94), which was the genre with the lowest scores in the original paper (F-score 0.245-0.296).
