@@ -116,7 +116,7 @@ To compare model performance we introduce a *human baseline*.
 |<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/logit_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/random_forest_features.png" alt="drawing" width="600"/>|<img src="https://github.com/evtaktasheva/Song-Genre-Classification/blob/main/img/xgboost_features.png" alt="drawing" width="600"/>|
 
 - The most prominent features for *extended* model are `slang` and `swear_words`, while others do not play such a big role in the decision making. 
-- *RandomForest* has a much different distribution, making use of almost all features to the same extent, although `slang`, `words_length` and `lines_length` are quite helpful in analysing song lyrics.
+- *RandomForest* has a much different distribution, making use of almost all features to the same extent (due to its algorythm), although `slang`, `words_length` and `lines_length` are quite helpful in analysing song lyrics.
 - *XGBoost* has similar distribution to the *extended* model as it assigns more value to `slang` and `swear_words` features. 
 
 #### Confusion matrix
